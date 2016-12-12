@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features version="1"><feature name="Advantage Online" path="C:\Users\Administrator\IdeaProjects\TechTalk\target\classes\advantage.feature" started="1472160390218" tag="@TID8021REV0.2.0"><file><![CDATA[#Auto generated NGA revision tag
+@TID8021REV0.2.0
+Feature: Advantage Online
+	verify multiple scenarios
+
+	Scenario Outline: verify mice color
+		Given I am in the site
+		And I select the Mice category
+		When I filter by "<color>" color
+		Then the mouse price is "<price>"
+
+		Examples:
+			| color  | price |
+			| white  | 29.99 |
+			| purple | 9.99 |
+]]></file><scenarios><scenario name="verify mice color" outlineIndex="1"><steps><step duration="1461624313" name="Given I am in the site" status="passed"/><step duration="4967124872" name="And I select the Mice category" status="passed"/><step duration="2533615026" name="When I filter by &quot;white&quot; color" status="passed"/><step duration="0" name="Then the mouse price is &quot;29.99&quot;"/></steps></scenario><scenario name="verify mice color" outlineIndex="2"><steps><step duration="327588004" name="Given I am in the site" status="passed"/><step duration="6330638112" name="And I select the Mice category" status="passed"/><step duration="2566402155" name="When I filter by &quot;purple&quot; color" status="passed"/><step duration="0" name="Then the mouse price is &quot;9.99&quot;"/></steps></scenario></scenarios></feature></features>
